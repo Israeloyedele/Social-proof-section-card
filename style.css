@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+}
+body {
+    background-image: url("images/bg-pattern-bottom-mobile.svg");
+    font-family: "League Spartan";
+}
+#container {
+    display:grid;
+    margin: 0 auto;
+    place-items: center;
+}
+.image {
+    width: 15%;
+    height: 50%;
+    border-radius: 50%;
+}
+.pic-name {
+    display: flex;
+    margin-bottom: 30px;
+}
+.rate-container {
+    text-align: center;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #f7f2f7;
+
+}
+.name-vee {
+    align-self: center;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#sub-container {
+    margin: 50px 20px;
+}
+.card {
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #f7f2f7;
+    background-color: #502050;
+}
+#text-1 {
+    color: #502050;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+#text-2 {
+    font-size: 1rem;
+    line-height: 25px;
+    color: #937b92;
+}
+#top-text-container {
+    text-align: center;
+    margin: 30px 0;
+
+}
+.verified {
+    color: #ee68a4;
+    font-weight: 400;
+    margin-top: 8px;
+}
+#rate-container {
+    margin-bottom: 50px;
+}
+.stars {
+    padding-bottom: 15px;
+}
+.rate {
+    color: #502050;
+    font-weight: 700;
+}
+.name {
+    font-weight: 700;
+    padding-top: 8px;
+}
+.card-text {
+    line-height: 20px;
+    color: #f7f2f7;
+}
+.stars img {
+    margin-left: 8px;
+}
+
+@media (min-width: 700px) {
+    #container {
+        height: 100vh;
+    }
+    #sub-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        max-width: 1050px;
+        margin: 30px;
+        background-image: url(images/bg-pattern-bottom-desktop.svg);
+    }
+    #top-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-gap: 100px;
+    }
+    #text-1, #text-2 {
+        text-align: start;
+    }
+    #cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 35px;
+    }
+    .rate-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        font-size: 1.2rem;
+        max-width: 450px;
+        margin: 15px 0;
+        height: 60px;
+        
+    }
+    .stars {
+        padding: 0;
+        text-align: center;
+    }
+    #rate-2 {
+        left: 10%;
+    }
+    #rate-3 {
+        left: 20%;
+    }
+    .card {
+        position: relative;
+    }
+    #card-2 {
+        top: 15px;
+    }
+    #card-3 {
+        top: 30px;
+    }
+    #rate-container {
+        margin: 0;
+    }
+    .rate {
+        padding: 0;
+    }
+}
